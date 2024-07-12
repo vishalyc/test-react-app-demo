@@ -1,3 +1,11 @@
+# Running the infrastructure CDK code
+
+1. Install npm or yarm
+2. Install aws cdk via npm npm install aws-cdk
+3. run cdk bootstrap - this will bootstrap the cloudformation with correct IAM roles
+4. run cdk synth
+5. run cdk deploy
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

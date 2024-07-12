@@ -1,0 +1,603 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "Pipeline": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/us-east-1",
+      "properties": {
+        "templateFile": "Pipeline.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/Pipeline/react-app-cicd-demo/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "reactappcicddemo4A397B6E",
+            "trace": [
+              "new Bucket (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1676:22)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:19:27)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/Pipeline/ArtifactsBucketEncryptionKey/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucketEncryptionKey01D58D69",
+            "trace": [
+              "new Key (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-kms/lib/key.ts:652:22)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:400:25)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:31:22)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/Pipeline/ArtifactsBucketEncryptionKeyAlias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucketEncryptionKeyAlias5C510EEE",
+            "trace": [
+              "new Alias (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-kms/lib/alias.ts:198:22)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:407:9)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:31:22)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/Pipeline/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucket22248F97",
+            "trace": [
+              "new Bucket (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1676:22)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:414:21)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:31:22)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/Pipeline/ArtifactsBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucketPolicyD4F9712A",
+            "trace": [
+              "new BucketPolicy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-s3/lib/bucket-policy.ts:53:21)",
+              "Bucket.addToResourcePolicy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:605:21)",
+              "Bucket.enforceSSLStatement (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1813:10)",
+              "new Bucket (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1719:12)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:414:21)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:31:22)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/Pipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineRoleD68726F7",
+            "trace": [
+              "new Role (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:426:31)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:31:22)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/Pipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineRoleDefaultPolicyC7A05455",
+            "trace": [
+              "new Policy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "Function.addToPrincipal (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Function.addToPrincipalOrResource (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/grant.ts:115:26)",
+              "Bucket.grant (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:917:27)",
+              "Bucket.grantReadWrite (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:775:17)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:443:25)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:31:22)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/Pipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineC660917D",
+            "trace": [
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:430:25)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:31:22)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/Pipeline/Source/Github_Source/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineSourceGithubSourceCodePipelineActionRole876943DA",
+            "trace": [
+              "new Role (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "Pipeline.getRoleForAction (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:722:20)",
+              "Pipeline._attachActionToPipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:548:29)",
+              "Stage.attachActionToPipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:37:14)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/Pipeline/Source/Github_Source/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineSourceGithubSourceCodePipelineActionRoleDefaultPolicy5ACF5ED2",
+            "trace": [
+              "new Policy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "Role.addToPolicy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/role.ts:445:17)",
+              "CodeStarConnectionsSourceAction.bound (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codestar-connections/source-action.ts:136:18)",
+              "CodeStarConnectionsSourceAction.bind (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:413:17)",
+              "RichAction.bind (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:554:37)",
+              "Stage.attachActionToPipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:37:14)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/Pipeline/Build/Build/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildCodePipelineActionRoleD77A08E6",
+            "trace": [
+              "new Role (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "Pipeline.getRoleForAction (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:722:20)",
+              "Pipeline._attachActionToPipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:548:29)",
+              "Stage.attachActionToPipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:52:14)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/Pipeline/Build/Build/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildCodePipelineActionRoleDefaultPolicyC9CB73F8",
+            "trace": [
+              "new Policy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "Role.addToPolicy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/role.ts:445:17)",
+              "CodeBuildAction.bound (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.ts:166:18)",
+              "CodeBuildAction.bind (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:413:17)",
+              "RichAction.bind (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:554:37)",
+              "Stage.attachActionToPipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:52:14)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/Pipeline/Deploy/Deploy/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployCodePipelineActionRole8B83082E",
+            "trace": [
+              "new Role (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "Pipeline.getRoleForAction (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:722:20)",
+              "Pipeline._attachActionToPipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:548:29)",
+              "Stage.attachActionToPipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:74:14)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/Pipeline/Deploy/Deploy/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployCodePipelineActionRoleDefaultPolicyEE6D615B",
+            "trace": [
+              "new Policy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "Function.addToPrincipal (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Function.addToPrincipalOrResource (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/grant.ts:115:26)",
+              "Bucket.grant (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:917:27)",
+              "Bucket.grantWrite (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:735:17)",
+              "S3DeployAction.bound (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline-actions/lib/s3/deploy-action.ts:116:23)",
+              "S3DeployAction.bind (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:413:17)",
+              "RichAction.bind (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:554:37)",
+              "Stage.attachActionToPipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:74:14)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/BuildWebsite/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BuildWebsiteRoleFD9016CE",
+            "trace": [
+              "new Role (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "new Project (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:1020:31)",
+              "new PipelineProject (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:58:20)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/BuildWebsite/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BuildWebsiteRoleDefaultPolicyF526FDD0",
+            "trace": [
+              "new Policy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "PipelineProject.addToRolePolicy (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:290:17)",
+              "new Project (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:1119:10)",
+              "new PipelineProject (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:58:20)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/BuildWebsite/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BuildWebsite69491489",
+            "trace": [
+              "new Project (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:1073:22)",
+              "new PipelineProject (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
+              "new Pipeline (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/stacks/pipeline.ts:58:20)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:8:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ],
+        "/Pipeline/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "Object.<anonymous> (/Users/vchaphekar/Desktop/stuff/CICD/cra-pipeline-master/infra/index.ts:10:5)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Module.m._compile (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "phase4 (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/vchaphekar/.npm/_npx/1bf7c3c15bf47d04/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1358:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1416:10)",
+              "Module.load (node:internal/modules/cjs/loader:1208:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:1024:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)",
+              "node:internal/main/run_main_module:28:49"
+            ]
+          }
+        ]
+      },
+      "displayName": "Pipeline"
+    }
+  }
+}
